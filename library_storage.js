@@ -3,7 +3,7 @@
 var getStorage = function(key) {
     var storage = localStorage.getItem(key) || "";
     if (storage === "") {
-        return {};
+        return [];
     } else {
         return storage.split("|");
     }

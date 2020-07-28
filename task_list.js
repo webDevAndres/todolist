@@ -30,7 +30,7 @@ var addToTaskList = function() {
 };
 
 var deleteFromTaskList = function() {
-  deleteFromTaskList(tasks, this.id);  // 'this' = clicked link
+  deleteTask(tasks, this.id);  // 'this' = clicked link
   setStorage("tasks_10", tasks);
   displayTaskList();  
 };
